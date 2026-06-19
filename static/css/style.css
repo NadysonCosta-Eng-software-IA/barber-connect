@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eae6df; /* Cor de fundo clássica do WhatsApp */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Principal do Chat */
+.chat-container {
+    width: 450px;
+    height: 600px;
+    background: #efeae2; /* Fundo do chat */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Cabeçalho Verde do WhatsApp */
+.chat-header {
+    background-color: #008069;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #aebac1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* Área onde as mensagens aparecem */
+#chatbox {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilo Geral dos Balões */
+.message {
+    max-width: 75%;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 14.5px;
+    line-height: 1.4;
+    position: relative;
+    word-wrap: break-word;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+}
+
+/* Balão do Usuário (Verde Claro) */
+.user-msg {
+    background-color: #d9fdd3;
+    color: #111b21;
+    align-self: flex-end; /* Alinha à direita */
+    border-top-right-radius: 0px; /* Detalhe do balão do WhatsApp */
+}
+
+/* Balão do Gemini (Branco) */
+.bot-msg {
+    background-color: #ffffff;
+    color: #111b21;
+    align-self: flex-start; /* Alinha à esquerda */
+    border-top-left-radius: 0px;
+}
+
+/* Barra de Entrada de Texto (Rodapé) */
+.input-area {
+    background-color: #f0f2f5;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 11px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    background-color: #ffffff;
+}
+
+button {
+    background-color: #008069;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #006653;
+}
